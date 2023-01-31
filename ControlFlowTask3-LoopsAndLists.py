@@ -52,5 +52,29 @@ if count2%2 != 0:
 
 print("END OF PROGRAMS")
 
+print("EXTRAS")
+print("here are the sum of all number 1 : 100")
+ininum = 1
+totnum = 0
+while ininum < 101:
+    totnum += ininum
+    ininum += 1
+print(totnum)
+ininum = 1
+totnum = 0
+while ininum < 101:
+    if ininum % 2 != 0:
+        totnum += ininum
+    ininum += 1
+print("the sum of all odd numbers, 1:100 is:",totnum)
+ininum = 1
+totnum = 0
+while ininum < 101:
+    if ininum % 2 == 0:
+        totnum += ininum
+    ininum += 1
+print("the sum of all even numbers, 1:100 is:",totnum)
+
+
 
 
