@@ -19,7 +19,7 @@ print("Thank you for entering your details ... calculating pay")
 if hours <= 40:
     total = (hours*pay)
 elif hours > 40:
-    total = (40*pay) + ((hours-40)*pay)
+    total = (40*pay) + ((hours-40)*pay*1.5)
 
 print(f"Your total weekly paycheck is {total} pounds")
 

@@ -100,11 +100,20 @@ for item in dict_data.values():
          print(embed_value)
      print(item)
 ```
+
+This iterates through the dictionary to print all the values associated with the money key.
+
+```
 for items in dict_data.values():
     print(items["money"])
+    
+```
 
-# please see python documentation for more you can do with dictionaries and loops
+Finally we have a for list for a list , with if, elif and else statements.
 
+
+
+```
 list_1 = [1, 2, 3, 4, 5]
 
 for num in list_1:
@@ -114,3 +123,41 @@ for num in list_1:
         print("Gone too far!")
     else:
         print("Too soon")
+```
+
+# While loops
+
+# While loops monitor data rather than iterate
+
+x = 0
+
+# while x < 10:
+#     print(f"It's working > {x}")
+#     x += 1 #incrementer
+
+#using break
+
+# while x < 10:
+#     print(f"It's working > {x}")
+#     if x == 4:
+#         break
+#     x += 1
+#
+# print(x) # 4
+
+# Asking for someone's age
+# This can either be an int (20) or string (twenty)
+# age = input("What is your age?")
+# #
+# # print(f"your age is {age}")
+
+user_prompt = True
+
+while user_prompt:
+    age = input("What is your age?")
+    if age.isdigit() and int(age) <118:
+        user_prompt = False
+    else:
+        print("Please provide your answer in digits and below 118")
+
+print(f"Your age is {age}")
