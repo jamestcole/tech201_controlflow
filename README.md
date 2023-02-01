@@ -27,10 +27,16 @@ We can write another if statement to print a line in the event the age is smalle
 
 ### elif and else
 
+We can first define a variable we want to use.
+
 `film_rating = "universal"`
+
+Here we use an if statement, whatever is contained in the indented line begins to run if the condition is met. Here we use a == operater which returns true if the two sides are equal.
+The film_rating uses the .lower() method as we do not care about the case of the string.
 
 `if film_rating.lower() == "universal":
     print("All age groups can watch this film")`
+
 
 
 `elif film_rating.lower() == "pg":
