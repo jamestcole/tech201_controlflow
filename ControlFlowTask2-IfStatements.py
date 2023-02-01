@@ -57,7 +57,7 @@ while numberguess > 0:
         print(f"you have won {wincount} times, you have lost {failurecount} times")
         q = input("would you like to play again? (y/n)")
         if q == "y":
-            n = random.randint(1, 20)
+            n = random.randint(1, 21)
             numberguess = 4
         else:
             break
@@ -75,7 +75,7 @@ while numberguess > 0:
         print(f"you have won {wincount} times, you have lost {failurecount} times")
         q = input("would you like to play again? (y/n)")
         if q == "y":
-            n = random.randint(1, 20)
+            n = random.randint(1, 21)
             numberguess = 4
         else:
             break
