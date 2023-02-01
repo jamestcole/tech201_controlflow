@@ -37,15 +37,17 @@ The film_rating uses the .lower() method as we do not care about the case of the
 `if film_rating.lower() == "universal":
     print("All age groups can watch this film")`
 
-
+Here we use an elif statement, this can be broken down to else , if . if the first if statement doesn't run the second elif statement tests its conditions.
 
 `elif film_rating.lower() == "pg":
     print("I'm afraid you cannot watch this movie , you are not old enough")`
 
+Now we have expanded our elif statement to include or. So using the == operator if either of these conditions are true the indented code will run.
 
 `elif film_rating.lower() == "12" or film_rating == "12a":
     print("12 rated movies may not be suitable for those under 12, supervision is recommended")`
 
+many elif statements can be made in a row.
 
 `elif film_rating.lower() == "15":
     print("You must be 15 to watch 15 rated movies in the cinema")`
@@ -54,6 +56,7 @@ The film_rating uses the .lower() method as we do not care about the case of the
 `elif film_rating.lower() == "18":
     print("You must be 18 to watch 18 rated movies in the cinema")`
 
+finally, there is an else statement. This will activate if non of the other statements run their code.
 
 `else:
     print("This is not a correct rating, please use universal, pg, 12, 15, 18")`
