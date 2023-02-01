@@ -81,18 +81,25 @@ the in statement.
 `for num in list_data:
     print(num * 2)`
 
-
-
-`for data in embedded_lists:
+Here we loop a for statement with another for statement. The first referes to each list in the
+embedded list as data, the next opens data and iterates through each embedded list. This occurs before the code 
+goes back to the last for statement and does this again for the next embedded list.
+```
+for data in embedded_lists:
     print(data)`
-#     for num in data:
-#         print(num)
+    for num in data:
+        print(num)
 
-# for item in dict_data.values():
-#     for embed_value in item.values():
-#         print(embed_value)
-#     print(item)
+```
 
+Here we have a similar block of code for a dictionary.
+
+```
+for item in dict_data.values():
+     for embed_value in item.values():
+         print(embed_value)
+     print(item)
+```
 for items in dict_data.values():
     print(items["money"])
 
