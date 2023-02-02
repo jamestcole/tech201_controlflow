@@ -122,34 +122,63 @@ for num in list_1:
     elif num > 3:
         print("Gone too far!")
     else:
-        print("Too soon")
+        print("Too soon")     
 ```
 
-# While loops
 
-# While loops monitor data rather than iterate
+```
+amount = 0
+number = 0
+print("I will ask you for ten numbers and return the average")
+while True:
+    amount += 1
+    number += int(input("give me a number:"))
+    if amount == 10:
+        break
+print(f"the average value of your numbers is: {number/10}")
+```
 
+```
+total = 0
+for i in range(10):
+    total += int(input("Enter a Number: "))
+print(f"the total of your inputs is {total/10}")
+```
+
+
+## While loops
+
+While loops monitor data rather than iterate
+
+```
 x = 0
 
-# while x < 10:
-#     print(f"It's working > {x}")
-#     x += 1 #incrementer
+while x < 10:
+    print(f"It's working > {x}")
+    x += 1 #incrementer
+```
 
-#using break
+using break
 
-# while x < 10:
-#     print(f"It's working > {x}")
-#     if x == 4:
-#         break
-#     x += 1
-#
-# print(x) # 4
 
-# Asking for someone's age
-# This can either be an int (20) or string (twenty)
-# age = input("What is your age?")
-# #
-# # print(f"your age is {age}")
+```
+ while x < 10:
+     print(f"It's working > {x}")
+     if x == 4:
+          break
+     x += 1
+
+ print(x) # 4
+```
+
+
+Asking for someone's age
+This can either be an int (20) or string (twenty)
+
+```
+ age = input("What is your age?")
+ 
+print(f"your age is {age}")
 
 user_prompt = True
 
@@ -161,3 +190,4 @@ while user_prompt:
         print("Please provide your answer in digits and below 118")
 
 print(f"Your age is {age}")
+```
